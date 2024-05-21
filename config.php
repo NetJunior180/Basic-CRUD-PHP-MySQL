@@ -17,5 +17,5 @@ if (!mysqli_real_connect($conn, $server, $user, $password, $nama_database, 3306,
 }
 
 // Si la conexión es exitosa
-echo 'Successfully connected to MySQL with SSL!';
+// echo 'Successfully connected to MySQL with SSL!'; // Comentado para evitar impresión no deseada
 ?>
