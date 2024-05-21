@@ -1,9 +1,10 @@
 <?php
 
-$server = "localhost";
-$user = "root";
-$password = "";
-$nama_database = "mahasiswa";
+$server       = getenv('DB_HOST');
+$user   = getenv('DB_USERNAME');
+$password   = getenv('DB_PASSWORD');
+$nama_database     = getenv('DB_DATABASE');
+$sslcert    = "DigiCertGlobalRootCA.crt.pem";
 
 $db = mysqli_connect($server, $user, $password, $nama_database);
 
